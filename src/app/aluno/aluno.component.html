@@ -1,0 +1,19 @@
+<br><br><br>
+<h1>Alunos Cadastrados</h1>
+<br>
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Matrícula</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Curso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let alu of aluno">
+      <td>{{ alu.id }}</td>
+      <td>{{ alu.name }}</td>
+      <td>{{ alu.curso }}</td>
+    </tr>
+  </tbody>
+</table>
